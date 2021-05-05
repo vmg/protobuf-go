@@ -35,7 +35,7 @@ func Intn(n int) int {
 }
 
 // randSeed is a best-effort at an approximate hash of the Go binary.
-var randSeed = binaryHash()
+var randSeed = uint64(0)
 
 func binaryHash() uint64 {
 	// Open the Go binary.
